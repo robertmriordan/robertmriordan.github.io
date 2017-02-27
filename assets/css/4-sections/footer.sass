@@ -1,0 +1,87 @@
+.footer
+  display: flex
+  height: 150px
+  justify-content: center
+  .footer-wrapper
+    display: flex
+    justify-content: center
+    width: 100%
+    border-top: 2px solid $raisin
+    .footer-container
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 960px
+      .footer-logo
+        display: flex
+        align-self: center
+        height: 75px
+      .insta
+        height: 65px
+        width: 65px
+        background:
+          image: url(/assets/images/insta-icon.svg)
+          repeat: no-repeat
+          position: center
+          size: contain
+      .footer-nav, ul
+        list-style: none
+        font-family: "Avenir-Book"
+        font-size: 12pt
+        letter-spacing: 1px
+        color: $lightgreen
+        margin: 0
+        padding: 0
+        margin-top: 4px
+        li
+          padding: 5px 0px
+          a, a:hover, a:visited
+            color: $lightgreen
+
+
+
+@media(max-width: 1000px)
+  .footer-wrapper
+    width: 100% !important
+    .footer-container
+      width: calc(100% - 40px) !important
+
+
+@media(max-width: 650px)
+  .footer
+    height: 80px !important
+  .footer-logo
+    height: 60px !important
+  .insta
+    width: 50px !important
+    height: 50px !important
+  .footer-nav, ul, a
+    font-size: 10pt !important
+    li
+      padding: 3px 0px !important
+
+
+@media(max-width: 500px)
+  .footer-logo
+    height: 55px !important
+  .insta
+    width: 50px !important
+    height: 50px !important
+  .footer-nav, ul, a
+    font-size: 10pt !important
+    li
+      padding: 3px 0px !important
+
+
+
+
+@media(max-width: 380px)
+  .footer-logo
+    height: 50px !important
+  .insta
+    width: 45px !important
+    height: 45px !important
+  .footer-nav, ul, a
+    font-size: 8pt !important
+    li
+      padding: 3px 0px !important

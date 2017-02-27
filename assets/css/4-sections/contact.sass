@@ -1,0 +1,88 @@
+.contact
+  .contact-container
+    .first, .second
+      font-family: "Avenir-Book"
+      font-size: 14pt
+
+  .contact-form
+      display: flex
+      flex-direction: column
+      margin: auto
+      margin-top: 40px
+      margin-bottom: 40px
+      color: $darkgreen
+      .form-container
+        display: flex
+        align-self: center
+        .name,
+        .email,
+        .phone,
+        .message
+          p
+            font-family: "Big John"
+            font-size: 16px
+            text-decoration: underline
+            padding: 0
+            margin: 0
+            margin-bottom: 5px
+          input
+            margin-bottom: 10px
+            font-family: "Avenir-Book"
+          textarea
+            font-family: "Avenir-Book"
+        .name,
+        .email,
+        .phone
+          .yourname,
+          .youremail,
+          .yourphone
+            width: 550px
+            height: 30px
+            border: 2px solid $gunmetal
+        .message
+          .yourmessage
+            width: 550px
+            height: 200px
+            border: 2px solid $gunmetal
+            text-align: top
+            resize: none
+        .button
+          .submitbutton
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-top: 9px
+            width: 100px
+            color: $gunmetal
+            height: 35px
+            font-family: "Big John"
+            float: right
+            background: $darkgreen
+            border: 2px solid $gunmetal
+          .submitbutton:hover
+            background-color: $lightgreen
+            color: white
+            border: 2px solid white
+      .contact-phone
+        display: flex
+        align-self: center
+        text-align: center
+        justify-content: center
+        .phone-cta, p
+          color: $gunmetal !important
+          font-family: "Avenir-Book"
+          font-size: 16pt
+
+@media(max-width:630px)
+  .contact
+    .contact-form
+      .name,
+      .email,
+      .phone
+        .yourname,
+        .youremail,
+        .yourphone
+          width: 90vw !important
+      .message
+        .yourmessage
+          width: 90vw !important

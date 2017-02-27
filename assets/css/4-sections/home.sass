@@ -1,0 +1,65 @@
+.home
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  width: 100%
+  .home-container
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: center
+    margin-top: 100px
+    .home-left
+      width: 45%
+      height: 400px
+      background:
+        image: url(/assets/images/roberthomeimage.jpg)
+        size: cover
+        position: top
+    .line
+      height: 300px
+      width: 2px
+      background: $gunmetal
+    .home-right
+      display: flex
+      align-items: center
+      width: 45%
+      min-height: 100%
+      .home-text
+        display: flex
+        flex-direction: column
+        color: $gunmetal
+        h3
+          margin-bottom: 30px
+          font-size: 18pt
+        p
+          font-family: "Avenir-Book"
+          margin: 0
+          font-size: 14pt
+        .first
+          margin-bottom: 30px
+
+        .home-contact-link, .home-contact-link:hover, .home-contact-link:visited
+          font-size: 14pt !important
+          color: $gunmetal
+          text-decoration: underline
+
+
+
+@media(max-width: 800px)
+  .home-container
+    flex-direction: column !important
+    margin-top: 20px !important
+    .home-left
+      width: 100% !important
+      height: 350px !important
+      background:
+        position: center !important
+        position: 0px -20px !important
+        repeat: no-repeat !important
+    .home-text
+      margin-top: 20px !important
+    .line
+      display: none !important
+    .home-right
+      width: 100% !important

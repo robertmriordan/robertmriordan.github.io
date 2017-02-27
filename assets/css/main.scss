@@ -1,0 +1,28 @@
+@import "0-tools/bourbon/bourbon";
+@import "0-tools/normalize";
+
+@import "1-base/vars";
+@import "1-base/fonts";
+
+@import "3-layouts/main_layout";
+
+@import "4-sections/header";
+@import "4-sections/footer";
+@import "4-sections/home";
+@import "4-sections/bio";
+@import "4-sections/gallery";
+@import "4-sections/contact";
+
+
+.page-title {
+  color: $darkgreen;
+  font-size: 26pt;
+  margin-top: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .page-title {
+    font-size: 22px; }
+}

@@ -1,0 +1,982 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+@font-face {
+  font-family: "Avenir-Light";
+  src: url(/assets/avenirltstd-light.otf); }
+
+@font-face {
+  font-family: "Avenir-Book";
+  src: url(/assets/avenirltstd-book.otf); }
+
+@font-face {
+  font-family: "Big John";
+  src: url(/assets/big_john.otf); }
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Big John", Arial;
+  letter-spacing: 2px; }
+
+a {
+  text-decoration: none; }
+
+.main-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-height: 100vh;
+  width: 100%; }
+  .main-container .content-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 1000px;
+    min-height: calc(100vh - 120px); }
+    .main-container .content-container .content-column {
+      width: calc(100% - 40px); }
+
+@media (max-width: 1000px) {
+  .content-container {
+    width: 100% !important; } }
+
+@media (max-width: 420px) {
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    text-align: center !important; } }
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px; }
+  .header .header-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    border-bottom: 2px solid #25291C; }
+    .header .header-wrapper .header-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 1000px; }
+      .header .header-wrapper .header-container .brand, .header .header-wrapper .header-container .logo {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: center;
+            align-self: center;
+        height: 75px;
+        margin-left: 10px; }
+      .header .header-wrapper .header-container .desktop-nav, .header .header-wrapper .header-container ul {
+        list-style: none;
+        font-family: "Avenir-Book";
+        font-size: 14pt;
+        letter-spacing: 1px;
+        color: #91CB3E;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 4px; }
+        .header .header-wrapper .header-container .desktop-nav li, .header .header-wrapper .header-container ul li {
+          display: inline;
+          padding: 0px 15px; }
+          .header .header-wrapper .header-container .desktop-nav li a, .header .header-wrapper .header-container .desktop-nav li a:hover, .header .header-wrapper .header-container .desktop-nav li a:visited, .header .header-wrapper .header-container ul li a, .header .header-wrapper .header-container ul li a:hover, .header .header-wrapper .header-container ul li a:visited {
+            color: #91CB3E; }
+      .header .header-wrapper .header-container .hamburger {
+        display: none;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-item-align: center;
+            align-self: center;
+        height: 30px;
+        width: 50px;
+        margin-right: 20px; }
+        .header .header-wrapper .header-container .hamburger .line1, .header .header-wrapper .header-container .hamburger .line2, .header .header-wrapper .header-container .hamburger .line3 {
+          background: #292F36;
+          height: 2px;
+          width: 100%; }
+
+.mobile-nav {
+  display: none;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center; }
+  .mobile-nav .mobile-nav-list, .mobile-nav ul {
+    list-style: none;
+    text-align: right;
+    padding-right: 25px;
+    font-family: "Avenir-Book"; }
+    .mobile-nav .mobile-nav-list .nav-item, .mobile-nav .mobile-nav-list a, .mobile-nav ul .nav-item, .mobile-nav ul a {
+      color: #292F36;
+      padding-bottom: 15px !important;
+      font-size: 12pt !important; }
+      .mobile-nav .mobile-nav-list .nav-item:first-child, .mobile-nav .mobile-nav-list a:first-child, .mobile-nav ul .nav-item:first-child, .mobile-nav ul a:first-child {
+        padding-top: 15px !important; }
+
+.is-active {
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+@media (max-width: 800px) {
+  .desktop-nav, ul {
+    font-size: 12pt !important; } }
+
+@media (max-width: 700px) {
+  .desktop-nav {
+    display: none !important; }
+  .hamburger {
+    display: -ms-flexbox !important;
+    display: flex !important; } }
+
+@media (max-width: 650px) {
+  .header {
+    height: 80px !important; }
+  .brand, .logo {
+    height: 60px !important; } }
+
+@media (max-width: 500px) {
+  .brand, .logo {
+    height: 60px !important; } }
+
+@media (max-width: 500px) {
+  .brand, .logo {
+    height: 60px !important; } }
+
+.footer {
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .footer .footer-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%;
+    border-top: 2px solid #25291C; }
+    .footer .footer-wrapper .footer-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 960px; }
+      .footer .footer-wrapper .footer-container .footer-logo {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-item-align: center;
+            align-self: center;
+        height: 75px; }
+      .footer .footer-wrapper .footer-container .insta {
+        height: 65px;
+        width: 65px;
+        background-image: url(/assets/images/insta-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; }
+      .footer .footer-wrapper .footer-container .footer-nav, .footer .footer-wrapper .footer-container ul {
+        list-style: none;
+        font-family: "Avenir-Book";
+        font-size: 12pt;
+        letter-spacing: 1px;
+        color: #91CB3E;
+        margin: 0;
+        padding: 0;
+        margin-top: 4px; }
+        .footer .footer-wrapper .footer-container .footer-nav li, .footer .footer-wrapper .footer-container ul li {
+          padding: 5px 0px; }
+          .footer .footer-wrapper .footer-container .footer-nav li a, .footer .footer-wrapper .footer-container .footer-nav li a:hover, .footer .footer-wrapper .footer-container .footer-nav li a:visited, .footer .footer-wrapper .footer-container ul li a, .footer .footer-wrapper .footer-container ul li a:hover, .footer .footer-wrapper .footer-container ul li a:visited {
+            color: #91CB3E; }
+
+@media (max-width: 1000px) {
+  .footer-wrapper {
+    width: 100% !important; }
+    .footer-wrapper .footer-container {
+      width: calc(100% - 40px) !important; } }
+
+@media (max-width: 650px) {
+  .footer {
+    height: 80px !important; }
+  .footer-logo {
+    height: 60px !important; }
+  .insta {
+    width: 50px !important;
+    height: 50px !important; }
+  .footer-nav, ul, a {
+    font-size: 10pt !important; }
+    .footer-nav li, ul li, a li {
+      padding: 3px 0px !important; } }
+
+@media (max-width: 500px) {
+  .footer-logo {
+    height: 55px !important; }
+  .insta {
+    width: 50px !important;
+    height: 50px !important; }
+  .footer-nav, ul, a {
+    font-size: 10pt !important; }
+    .footer-nav li, ul li, a li {
+      padding: 3px 0px !important; } }
+
+@media (max-width: 380px) {
+  .footer-logo {
+    height: 50px !important; }
+  .insta {
+    width: 45px !important;
+    height: 45px !important; }
+  .footer-nav, ul, a {
+    font-size: 8pt !important; }
+    .footer-nav li, ul li, a li {
+      padding: 3px 0px !important; } }
+
+.home {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-height: 100vh;
+  width: 100%; }
+  .home .home-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-top: 100px; }
+    .home .home-container .home-left {
+      width: 45%;
+      height: 400px;
+      background-image: url(/assets/images/roberthomeimage.jpg);
+      background-size: cover;
+      background-position: top; }
+    .home .home-container .line {
+      height: 300px;
+      width: 2px;
+      background: #292F36; }
+    .home .home-container .home-right {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      width: 45%;
+      min-height: 100%; }
+      .home .home-container .home-right .home-text {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        color: #292F36; }
+        .home .home-container .home-right .home-text h3 {
+          margin-bottom: 30px;
+          font-size: 18pt; }
+        .home .home-container .home-right .home-text p {
+          font-family: "Avenir-Book";
+          margin: 0;
+          font-size: 14pt; }
+        .home .home-container .home-right .home-text .first {
+          margin-bottom: 30px; }
+        .home .home-container .home-right .home-text .home-contact-link, .home .home-container .home-right .home-text .home-contact-link:hover, .home .home-container .home-right .home-text .home-contact-link:visited {
+          font-size: 14pt !important;
+          color: #292F36;
+          text-decoration: underline; }
+
+@media (max-width: 800px) {
+  .home-container {
+    -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    margin-top: 20px !important; }
+    .home-container .home-left {
+      width: 100% !important;
+      height: 350px !important;
+      background-position: center !important;
+      background-position: 0px -20px !important;
+      background-repeat: no-repeat !important; }
+    .home-container .home-text {
+      margin-top: 20px !important; }
+    .home-container .line {
+      display: none !important; }
+    .home-container .home-right {
+      width: 100% !important; } }
+
+.bio .bio-image {
+  height: 400px;
+  width: 100%;
+  background-image: url(/assets/images/bio-photo.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.bio .bio-text {
+  font-family: "Avenir-Book";
+  line-height: 30px;
+  margin-top: 15px;
+  color: #292F36; }
+  .bio .bio-text p {
+    margin: 0; }
+  .bio .bio-text .bio {
+    margin-bottom: 15px; }
+    .bio .bio-text .bio a, .bio .bio-text .bio a:visited, .bio .bio-text .bio a:hover, .bio .bio-text .bio a:focus {
+      text-decoration: underline;
+      color: #292F36;
+      font-size: 12pt !important; }
+  .bio .bio-text .bio-name {
+    font-size: 16pt !important; }
+
+.bio .pdf-download-btn {
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  background: #4C934C;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-bottom: 20px; }
+  .bio .pdf-download-btn .pdf-btn-text {
+    color: #292F36;
+    font-size: 12pt;
+    text-align: center;
+    font-family: "Big John";
+    color: white; }
+
+@media (max-width: 700px) {
+  .bio .bio-image {
+    height: 300px !important; } }
+
+@media (max-width: 550px) {
+  .bio .bio-image {
+    height: 250px !important; } }
+
+@media (max-width: 400px) {
+  .bio .bio-image {
+    height: 200px !important; } }
+
+.gallery .gallery-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: auto;
+  width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .gallery .gallery-container .production-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px; }
+    .gallery .gallery-container .production-container .production-title, .gallery .gallery-container .production-container h2 {
+      font-family: "Avenir-Book";
+      font-size: 18pt;
+      letter-spacing: 2px; }
+    .gallery .gallery-container .production-container .img-row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      width: auto;
+      height: 250px; }
+      .gallery .gallery-container .production-container .img-row .img1, .gallery .gallery-container .production-container .img-row .img2, .gallery .gallery-container .production-container .img-row .img3, .gallery .gallery-container .production-container .img-row .img4, .gallery .gallery-container .production-container .img-row .img5, .gallery .gallery-container .production-container .img-row .img6 {
+        height: 80%;
+        width: 30%;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .gallery .gallery-container .production-container .img-row .img1 {
+        background-image: url(/assets/images/afunnything/forumhero.jpg);
+        background-position: 0px -30px; }
+      .gallery .gallery-container .production-container .img-row .img2 {
+        background-image: url(/assets/images/afunnything/forumprettylittlepic.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img3 {
+        background-image: url(/assets/images/afunnything/forumrob_anna.jpg);
+        background-position: 0px 0px;
+        background-size: cover; }
+      .gallery .gallery-container .production-container .img-row .img4 {
+        background-image: url(/assets/images/afunnything/forumrob.jpg);
+        background-position: 0px -120px;
+        background-size: cover; }
+      .gallery .gallery-container .production-container .img-row .img5 {
+        background-image: url(/assets/images/afunnything/rob_michele.jpg);
+        background-position: 0px -40px; }
+      .gallery .gallery-container .production-container .img-row .img7, .gallery .gallery-container .production-container .img-row .img8, .gallery .gallery-container .production-container .img-row .img9 {
+        height: 80%;
+        width: 30%;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .gallery .gallery-container .production-container .img-row .img7 {
+        background-image: url(/assets/images/biglove/lydia_nikos.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img8 {
+        background-image: url(/assets/images/biglove/lydia_nikos2.jpg);
+        background-position: 0px -140px; }
+      .gallery .gallery-container .production-container .img-row .img9 {
+        background-image: url(/assets/images/biglove/rehearsalphoto.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img10, .gallery .gallery-container .production-container .img-row .img11, .gallery .gallery-container .production-container .img-row .img12,
+      .gallery .gallery-container .production-container .img-row .img13, .gallery .gallery-container .production-container .img-row .img14, .gallery .gallery-container .production-container .img-row .img15 {
+        height: 80%;
+        width: 30%;
+        background-size: cover;
+        background-repeat: no-repeat; }
+      .gallery .gallery-container .production-container .img-row .img10 {
+        background-image: url(/assets/images/pajama/pjgamedreamballet.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img11 {
+        background-image: url(/assets/images/pajama/pjgamehines_gladys.jpg);
+        background-position: 0px -140px; }
+      .gallery .gallery-container .production-container .img-row .img12 {
+        background-image: url(/assets/images/pajama/pjgamehines_mabel.jpg);
+        background-position: 0px 0px; }
+      .gallery .gallery-container .production-container .img-row .img13 {
+        background-image: url(/assets/images/pajama/pjgamehines.jpg);
+        background-position: 0px 0px; }
+    .gallery .gallery-container .production-container .img16, .gallery .gallery-container .production-container .img17, .gallery .gallery-container .production-container .img18 {
+      height: 80%;
+      width: 30%;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .gallery .gallery-container .production-container .img16 {
+      background-image: url(/assets/images/heart/heartmoviestill.jpg);
+      background-position: center; }
+  .gallery .gallery-container .img19, .gallery .gallery-container .img20, .gallery .gallery-container .img21 {
+    height: 80%;
+    width: 30%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .gallery .gallery-container .img19 {
+    background-image: url(/assets/images/mermaid/mermaid1.jpg);
+    background-position: 0px -10px; }
+  .gallery .gallery-container .img22, .gallery .gallery-container .img23, .gallery .gallery-container .img24 {
+    height: 80%;
+    width: 30%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .gallery .gallery-container .img22 {
+    background-image: url(/assets/images/scarystories/ss1.jpg);
+    background-position: 0px 0px; }
+  .gallery .gallery-container .img25, .gallery .gallery-container .img26, .gallery .gallery-container .img27 {
+    height: 80%;
+    width: 30%;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .gallery .gallery-container .img25 {
+    background-image: url(/assets/images/spellingbee/spellingbeebarfee.jpg);
+    background-position: 0px -50px; }
+  .gallery .gallery-container .first {
+    margin-top: 30px; }
+
+@media (max-width: 420px) {
+  .production-title, h2 {
+    text-align: center !important;
+    margin-bottom: 10px !important; }
+  .img-row {
+    -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    height: auto !important; }
+    .img-row .img1, .img-row .img2, .img-row .img3, .img-row .img4, .img-row .img5,
+    .img-row .img6, .img-row .img7, .img-row .img8, .img-row .img9, .img-row .img10,
+    .img-row .img11, .img-row .img12, .img-row .img13, .img-row .img14, .img-row .img15,
+    .img-row .img16, .img-row .img17, .img-row .img18, .img-row .img19, .img-row .img20,
+    .img-row .img21, .img-row .img22, .img-row .img23, .img-row .img24, .img-row .img25,
+    .img-row .img26, .img-row .img27 {
+      width: 100% !important;
+      height: 220px !important;
+      margin-bottom: 10px !important; } }
+
+.contact .contact-container .first, .contact .contact-container .second {
+  font-family: "Avenir-Book";
+  font-size: 14pt; }
+
+.contact .contact-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #4C934C; }
+  .contact .contact-form .form-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center; }
+    .contact .contact-form .form-container .name p,
+    .contact .contact-form .form-container .email p,
+    .contact .contact-form .form-container .phone p,
+    .contact .contact-form .form-container .message p {
+      font-family: "Big John";
+      font-size: 16px;
+      text-decoration: underline;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 5px; }
+    .contact .contact-form .form-container .name input,
+    .contact .contact-form .form-container .email input,
+    .contact .contact-form .form-container .phone input,
+    .contact .contact-form .form-container .message input {
+      margin-bottom: 10px;
+      font-family: "Avenir-Book"; }
+    .contact .contact-form .form-container .name textarea,
+    .contact .contact-form .form-container .email textarea,
+    .contact .contact-form .form-container .phone textarea,
+    .contact .contact-form .form-container .message textarea {
+      font-family: "Avenir-Book"; }
+    .contact .contact-form .form-container .name .yourname,
+    .contact .contact-form .form-container .name .youremail,
+    .contact .contact-form .form-container .name .yourphone,
+    .contact .contact-form .form-container .email .yourname,
+    .contact .contact-form .form-container .email .youremail,
+    .contact .contact-form .form-container .email .yourphone,
+    .contact .contact-form .form-container .phone .yourname,
+    .contact .contact-form .form-container .phone .youremail,
+    .contact .contact-form .form-container .phone .yourphone {
+      width: 550px;
+      height: 30px;
+      border: 2px solid #292F36; }
+    .contact .contact-form .form-container .message .yourmessage {
+      width: 550px;
+      height: 200px;
+      border: 2px solid #292F36;
+      text-align: top;
+      resize: none; }
+    .contact .contact-form .form-container .button .submitbutton {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      padding-top: 9px;
+      width: 100px;
+      color: #292F36;
+      height: 35px;
+      font-family: "Big John";
+      float: right;
+      background: #4C934C;
+      border: 2px solid #292F36; }
+    .contact .contact-form .form-container .button .submitbutton:hover {
+      background-color: #91CB3E;
+      color: white;
+      border: 2px solid white; }
+  .contact .contact-form .contact-phone {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .contact .contact-form .contact-phone .phone-cta, .contact .contact-form .contact-phone p {
+      color: #292F36 !important;
+      font-family: "Avenir-Book";
+      font-size: 16pt; }
+
+@media (max-width: 630px) {
+  .contact .contact-form .name .yourname,
+  .contact .contact-form .name .youremail,
+  .contact .contact-form .name .yourphone,
+  .contact .contact-form .email .yourname,
+  .contact .contact-form .email .youremail,
+  .contact .contact-form .email .yourphone,
+  .contact .contact-form .phone .yourname,
+  .contact .contact-form .phone .youremail,
+  .contact .contact-form .phone .yourphone {
+    width: 90vw !important; }
+  .contact .contact-form .message .yourmessage {
+    width: 90vw !important; } }
+
+.page-title {
+  color: #4C934C;
+  font-size: 26pt;
+  margin-top: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 10px; }
+
+@media screen and (max-width: 650px) {
+  .page-title {
+    font-size: 22px; } }

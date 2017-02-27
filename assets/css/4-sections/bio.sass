@@ -1,0 +1,56 @@
+.bio
+  .bio-container
+  .bio-image
+    height: 400px
+    width: 100%
+
+    background:
+      image: url(/assets/images/bio-photo.jpg)
+      position: center
+      size: cover
+  .bio-text
+    font-family: "Avenir-Book"
+    line-height: 30px
+    margin-top: 15px
+    color: $gunmetal
+    p
+      margin: 0
+    .bio
+      margin-bottom: 15px
+      a, a:visited, a:hover, a:focus
+        text-decoration: underline
+        color: $gunmetal
+        font-size: 12pt !important
+    .bio-name
+      font-size: 16pt !important
+
+  .pdf-download-btn
+    display: flex
+    height: 50px
+    width: 200px
+    margin: 0 auto
+    background: $darkgreen
+    justify-content: center
+    margin-bottom: 20px
+    .pdf-btn-text
+      color: $gunmetal
+      font-size: 12pt
+      text-align: center
+      font-family: "Big John"
+      color: white
+
+@media (max-width: 700px)
+  .bio
+    .bio-image
+      height: 300px !important
+
+
+@media (max-width: 550px)
+  .bio
+    .bio-image
+      height: 250px !important
+
+@media (max-width: 400px)
+  .bio
+    .bio-image
+      height: 200px !important
